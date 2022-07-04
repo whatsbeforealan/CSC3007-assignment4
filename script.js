@@ -164,7 +164,7 @@ Promise.all([d3.json("https://chi-loong.github.io/CSC3007/assignments/links-samp
                     .enter()
                     .append("image")
                     .attr("xlink:href", function (d) {
-                        if (d.gender == "male") return "/male.png"; else return "/female.png";
+                        if (d.gender == "male") return "male.png"; else return "female.png";
                     })
                     .attr("width", 20)
                     .attr("height", 20)
